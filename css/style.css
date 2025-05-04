@@ -1,0 +1,123 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2e4d7a;
+}
+.main-section{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1200px;  
+    background-color: #ffffff;
+    margin: 40px auto;
+    
+}
+/* main-content-section */
+.main-content-section {
+    margin: 40px;
+}
+.about-me-section{
+    width: 400px;
+    height: 230px;
+    left: 498px;
+    top: 142px;
+margin: 100px 0 0 85px;
+}
+.my-projects-section{
+    width: 485px;
+    height: 107px;
+    left: 498px;
+    top: 412px;
+    margin: 40px 0 0 85px;
+
+}
+.my-work-eksperience-section{
+    width: 525px;
+    height: 213px;
+    left: 498px;
+    top: 570px;
+    margin: 50px 0 0 85px;
+}
+.Compani-2{
+    width: 525px;
+    height: 150px;
+    left: 498px;
+    top: 799px;
+    margin: 50px 0 0 85px;
+}
+.Compani-1{
+    width: 525px;
+    height: 126px;
+    left: 498px;
+    top: 969px;
+    margin: 20px 0 0 85px;
+}
+.Education{
+    width: 327px;
+    height: 114px;
+    left: 498px;
+    top: 1138px;
+    margin: 45px 0 0 85px;
+}
+
+.about-me-profession{
+    font-size: 14px;
+    font-weight: 700;
+    
+}
+/* Siide-bar-section */
+.Siide-bar-section{
+background-color: #1E2939;
+width: 370px;
+left: 40px;
+top: 40px;
+}
+.img{
+    width: 360px;
+    left: 40px;
+    top: 80px;
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/* Siide-bar-content-section */
+.Contact-section,
+.Tech-skills-section,
+.Soft-Skills-section{
+    margin: 40px 0 0 50px;
+    color: #fff;
+}
+/* Siide-bar-content-title */
+.Contact-title,
+.Tech-skills-title,
+.Soft-Skills-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+}
+/* Contact-section */
+.Contact-section-type{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    margin-right: 7px;
+}
+.Contact-section-link{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #C6C9CD;
+}
+/* skills-lists */
+.skills-lists{
+padding-left: 17px;
+color: #FB6D3A;
+}
+.skills-name{
+color: #fff;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+}
