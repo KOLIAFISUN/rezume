@@ -1,40 +1,86 @@
-/* Общие стили из первого шаблона + ваши улучшения */
+/* Основные стили из первого шаблона */
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #2e4d7a;
     margin: 0;
+    padding: 0;
 }
 
 .main-section {
     display: flex;
-    max-width: 1200px;
-    background: #fff;
+    flex-direction: row-reverse;
+    width: 1200px;
+    background-color: #ffffff;
     margin: 40px auto;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Боковая панель (из первого шаблона) */
+/* Боковая панель (без изменений) */
 .Siide-bar-section {
+    background-color: #1E2939;
     width: 370px;
-    background: #1E2939;
-    color: white;
-    padding: 40px 20px;
+    padding: 40px 0;
 }
 
-/* Кнопки языков (ваш стиль с улучшениями) */
+.img {
+    width: 360px;
+    margin: 40px 5px;
+}
+
+.Contact-section,
+.Tech-skills-section {
+    margin: 40px 0 0 50px;
+    color: #fff;
+}
+
+.Contact-title,
+.Tech-skills-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.Contact-section-type {
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 7px;
+}
+
+.Contact-section-link {
+    color: #C6C9CD;
+    font-size: 14px;
+}
+
+.skills-lists {
+    padding-left: 17px;
+}
+
+.skills-name {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Основной контент (правая часть) */
+.main-content-section {
+    padding: 40px;
+    width: calc(100% - 370px);
+}
+
+/* Кнопки переключения языка */
 .language-switcher {
     display: flex;
-    gap: 10px;
-    padding: 20px;
     justify-content: flex-end;
+    gap: 15px;
+    margin-bottom: 30px;
 }
 
 .lang-btn {
-    border: none;
     background: none;
+    border: none;
     cursor: pointer;
-    opacity: 0.7;
+    opacity: 0.6;
     transition: all 0.3s;
+    padding: 0;
 }
 
 .lang-btn.active {
@@ -45,14 +91,57 @@ body {
 .lang-btn img {
     width: 30px;
     height: auto;
+    border-radius: 3px;
 }
 
-/* Секции языков */
+/* Контейнер "Обо мне" */
+.about-me-container {
+    padding: 20px;
+}
+
 .lang-section {
     display: none;
-    padding: 0 40px;
 }
 
 .lang-section.active {
     display: block;
+}
+
+.lang-section h2 {
+    color: #1E2939;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.lang-section p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.lang-section a {
+    color: #2e4d7a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lang-section a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .main-section {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .Siide-bar-section,
+    .main-content-section {
+        width: 100%;
+    }
+
+    .language-switcher {
+        justify-content: center;
+    }
 }

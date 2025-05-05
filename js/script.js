@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // По умолчанию активен немецкий
+    // Устанавливаем немецкий как язык по умолчанию
     setActiveLanguage('de');
 
-    // Обработчики для кнопок
+    // Обработчики для кнопок переключения языка
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.addEventListener('click', function() {
             const lang = this.getAttribute('data-lang');
@@ -12,19 +12,18 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function setActiveLanguage(lang) {
-    // Убираем активные классы
+    // 1. Обновляем активную кнопку
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('active');
     });
-    
+    document.querySelector(`.lang-btn[data-lang="${lang}"]`).classList.add('active');
+
+    // 2. Показываем нужную языковую секцию
     document.querySelectorAll('.lang-section').forEach(section => {
         section.classList.remove('active');
     });
-
-    // Активируем выбранный язык
-    document.querySelector(`.lang-btn[data-lang="${lang}"]`).classList.add('active');
     document.querySelector(`.lang-section[data-lang="${lang}"]`).classList.add('active');
-    
-    // Меняем атрибут lang у html
+
+    // 3. Обновляем атрибут lang у html
     document.documentElement.lang = lang;
 }
