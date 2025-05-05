@@ -1,146 +1,58 @@
-/* === Общие стили === */
+/* Общие стили из первого шаблона + ваши улучшения */
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #2e4d7a;
     margin: 0;
-    padding: 0;
 }
 
 .main-section {
     display: flex;
     max-width: 1200px;
-    background-color: #ffffff;
+    background: #fff;
     margin: 40px auto;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-/* === Боковая панель === */
-.sidebar {
-    background-color: #1E2939;
+/* Боковая панель (из первого шаблона) */
+.Siide-bar-section {
     width: 370px;
-    color: #fff;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background: #1E2939;
+    color: white;
+    padding: 40px 20px;
 }
 
-.sidebar img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-}
-
-.section-title {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.contact-info,
-.tech-skills,
-.soft-skills {
-    margin-bottom: 30px;
-    width: 100%;
-}
-
-.contact-info p,
-.tech-skills ul,
-.soft-skills ul {
-    margin: 5px 0;
-    font-size: 14px;
-    color: #C6C9CD;
-}
-
-ul {
-    padding-left: 20px;
-    margin: 5px 0;
-}
-
-li {
-    color: #FB6D3A;
-    font-size: 14px;
-    line-height: 24px;
-}
-
-/* === Основной контент === */
-.main-content-section {
-    padding: 40px;
-    flex: 1;
-}
-
+/* Кнопки языков (ваш стиль с улучшениями) */
 .language-switcher {
     display: flex;
-    justify-content: flex-end;
     gap: 10px;
-    margin-bottom: 20px;
+    padding: 20px;
+    justify-content: flex-end;
 }
 
-.language-switcher button {
+.lang-btn {
     border: none;
     background: none;
     cursor: pointer;
-    font-size: 24px;
-    transition: transform 0.2s;
+    opacity: 0.7;
+    transition: all 0.3s;
 }
 
-.language-switcher button:hover {
+.lang-btn.active {
+    opacity: 1;
     transform: scale(1.1);
 }
 
-.language-content {
+.lang-btn img {
+    width: 30px;
+    height: auto;
+}
+
+/* Секции языков */
+.lang-section {
     display: none;
+    padding: 0 40px;
 }
 
-.language-content.active {
+.lang-section.active {
     display: block;
-}
-
-.section {
-    margin-bottom: 30px;
-}
-
-.section h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.section p,
-.section a {
-    font-size: 14px;
-    color: #333;
-    line-height: 1.6;
-}
-
-.section a {
-    color: #2e4d7a;
-    text-decoration: none;
-}
-
-.section a:hover {
-    text-decoration: underline;
-}
-
-/* === Адаптивность === */
-@media (max-width: 768px) {
-    .main-section {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 100%;
-        text-align: center;
-    }
-
-    .main-content-section {
-        padding: 20px;
-    }
-
-    .language-switcher {
-        justify-content: center;
-    }
 }

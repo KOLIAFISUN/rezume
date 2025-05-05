@@ -1,153 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume - Nikolai</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mykola Fisun - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="language-switcher">
-    <button onclick="setLanguage('en')"><img src="img/en.png" alt="English"></button>
-    <button onclick="setLanguage('de')"><img src="img/de.png" alt="Deutsch"></button>
-    <button onclick="setLanguage('ua')"><img src="img/ua.png" alt="Ukrainian"></button>
-    <button onclick="setLanguage('ru')"><img src="img/ru.png" alt="Русский"></button>
-  </div>
+    <div class="main-section">
+        <!-- Основной контент -->
+        <div class="main-content-section">
+            <!-- Кнопки переключения языка -->
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="de"><img src="img/de.png" alt="Deutsch"></button>
+                <button class="lang-btn" data-lang="en"><img src="img/en.png" alt="English"></button>
+                <button class="lang-btn" data-lang="ua"><img src="img/ua.png" alt="Українська"></button>
+                <button class="lang-btn" data-lang="ru"><img src="img/ru.png" alt="Русский"></button>
+            </div>
 
-  <div class="container">
-    <aside class="sidebar">
-      <img src="img/profile.jpg" alt="My Photo" class="profile-photo">
-      <h1>Nikolai</h1>
-      <p>Electromechanic / Front-End Developer</p>
-      <p>Email: example@example.com</p>
-      <p>Phone: +1234567890</p>
-      <p>Location: Ukraine</p>
-    </aside>
+            <!-- Секции контента на разных языках -->
+            <div class="lang-section" data-lang="de">
+                <!-- Ваш немецкий контент из второго файла -->
+                <h2>Über mich</h2>
+                <p>Ich wurde am 2. März 1984 geboren...</p>
+                <!-- ... -->
+            </div>
 
-    <main class="main-content">
-      <!-- English -->
-      <div id="lang-en" class="lang-section">
-        <h2>About Me</h2>
-        <p>I was born on March 2, 1984. In 2001, I graduated from secondary school (<a href="img/school-diploma.jpg" target="_blank">high school diploma</a>).</p>
-        <p>From 2001 to 2006, I studied at the East Ukrainian National University named after Volodymyr Dahl and received a <a href="img/bachelor-diploma.jpg" target="_blank">Bachelor's</a> and <a href="img/specialist-diploma.jpg" target="_blank">Specialist</a> diploma in electromechanics.</p>
-        <p>2006–2009: System administrator. Experience with servers, OS installation, PC assembly, twisted pair and fiber optic connections.</p>
-        <p>2009–2011: Deputy director in auto parts sales. Personnel management, bookkeeping, inventory tracking.</p>
-        <p>2011–2013: Specialized automotive diagnostics and injector repair training.</p>
-        <p>2014–2024: Auto electromechanic. Experience with all car brands, gas systems, electronics repair, ECU soldering, CCTV installation.</p>
-        <p>2023–2024: Front-End Developer course (JavaScript). No work experience yet.</p>
-        <h3>Skills</h3>
-        <ul>
-          <li>Goal-oriented</li>
-          <li>Resourceful</li>
-          <li>Teamwork</li>
-          <li>Punctual</li>
-          <li>Quick learner</li>
-          <li>Self-improvement</li>
-        </ul>
-        <h3>Languages</h3>
-        <ul>
-          <li>Ukrainian — Native</li>
-          <li>Russian — Fluent</li>
-          <li>English — A1</li>
-          <li>German — A0.1 (learning)</li>
-        </ul>
-      </div>
+            <div class="lang-section" data-lang="en" style="display:none">
+                <h2>About Me</h2>
+                <p>I was born on March 2, 1984...</p>
+                <!-- ... -->
+            </div>
 
-      <!-- Deutsch -->
-      <div id="lang-de" class="lang-section" style="display:none">
-        <h2>Über mich</h2>
-        <p>Ich wurde am 2. März 1984 geboren. 2001 schloss ich die Schule ab (<a href="img/school-diploma.jpg" target="_blank">Diplom</a>).</p>
-        <p>2001–2006: Studium an der Ostukrainischen Nationaluniversität, <a href="img/bachelor-diploma.jpg" target="_blank">Bachelor</a> und <a href="img/specialist-diploma.jpg" target="_blank">Spezialist</a> in Elektromechanik.</p>
-        <p>2006–2009: Systemadministrator. Erfahrung mit Servern, OS-Installation, PC-Zusammenbau, Netzwerkverkabelung.</p>
-        <p>2009–2011: Stellvertretender Direktor im Autoteilevertrieb. Personalmanagement, Buchhaltung, Lagerverwaltung.</p>
-        <p>2011–2013: Kurse in Fahrzeugdiagnostik und Reparatur.</p>
-        <p>2014–2024: Autoelektromechaniker. Arbeiten mit allen Marken, Gasanlagen, Elektronikreparatur, ECU-Löten, Videoüberwachung.</p>
-        <p>2023–2024: Front-End Developer Kurs (JavaScript). Keine Berufserfahrung.</p>
-        <h3>Fähigkeiten</h3>
-        <ul>
-          <li>Zielstrebig</li>
-          <li>Einfallsreich</li>
-          <li>Teamfähig</li>
-          <li>Pünktlich</li>
-          <li>Schnelle Auffassungsgabe</li>
-          <li>Selbstentwicklung</li>
-        </ul>
-        <h3>Sprachen</h3>
-        <ul>
-          <li>Ukrainisch — Muttersprache</li>
-          <li>Russisch — Fließend</li>
-          <li>Englisch — A1</li>
-          <li>Deutsch — A0.1 (lernt)</li>
-        </ul>
-      </div>
+            <!-- Украинский и русский аналогично -->
+        </div>
 
-      <!-- Ukrainian -->
-      <div id="lang-ua" class="lang-section" style="display:none">
-        <h2>Про мене</h2>
-        <p>Народився 2 березня 1984 року. У 2001 закінчив середню школу (<a href="img/school-diploma.jpg" target="_blank">атестат</a>).</p>
-        <p>2001–2006: навчався у Східноукраїнському національному університеті ім. В. Даля. Отримав <a href="img/bachelor-diploma.jpg" target="_blank">бакалавра</a> та <a href="img/specialist-diploma.jpg" target="_blank">спеціаліста</a> з електромеханіки.</p>
-        <p>2006–2009: системний адміністратор. Сервери, встановлення ОС, складання ПК, з'єднання мереж.</p>
-        <p>2009–2011: заступник директора з продажу автозапчастин. Керування персоналом, бухгалтерія, облік.</p>
-        <p>2011–2013: курси з діагностики та ремонту інжекторних систем.</p>
-        <p>2014–2024: автоелектромеханік. Робота з усіма марками авто, ГБО, ремонт електрики, пайка ЕБУ, встановлення відеоспостереження.</p>
-        <p>2023–2024: курс Front-End Developer (JavaScript). Досвід роботи відсутній.</p>
-        <h3>Навички</h3>
-        <ul>
-          <li>Цілеспрямованість</li>
-          <li>Кмітливість</li>
-          <li>Командна робота</li>
-          <li>Пунктуальність</li>
-          <li>Швидке навчання</li>
-          <li>Саморозвиток</li>
-        </ul>
-        <h3>Мови</h3>
-        <ul>
-          <li>Українська — рідна</li>
-          <li>Російська — вільно</li>
-          <li>Англійська — A1</li>
-          <li>Німецька — A0.1 (в процесі)</li>
-        </ul>
-      </div>
+        <!-- Боковая панель (оставляем из первого шаблона) -->
+        <aside class="Siide-bar-section">
+            <img src="img/My foto.jpg" alt="My foto">
+            <h1>Mykola Fisun</h1>
+            <p>Electromechanic / Front-End Developer</p>
+            <!-- Контакты и навыки -->
+        </aside>
+    </div>
 
-      <!-- Russian -->
-      <div id="lang-ru" class="lang-section" style="display:none">
-        <h2>Обо мне</h2>
-        <p>Родился 2 марта 1984 года. В 2001 году окончил среднюю школу (<a href="img/school-diploma.jpg" target="_blank">аттестат</a>).</p>
-        <p>2001–2006: учился в Восточноукраинском национальном университете им. В. Даля. Получил диплом <a href="img/bachelor-diploma.jpg" target="_blank">бакалавра</a> и <a href="img/specialist-diploma.jpg" target="_blank">специалиста</a> по электромеханике.</p>
-        <p>2006–2009: системный администратор. Серверы, установка ОС, сборка ПК, сетевая инфраструктура.</p>
-        <p>2009–2011: замдиректора по продажам автозапчастей. Управление персоналом, бухгалтерия, учёт.</p>
-        <p>2011–2013: курсы по диагностике и ремонту инжекторных систем автомобилей.</p>
-        <p>2014–2024: автоэлектромеханик. Все марки авто, ГБО, ремонт проводки, пайка блоков, видеонаблюдение.</p>
-        <p>2023–2024: курс Front-End Developer (JavaScript). Опыт работы отсутствует.</p>
-        <h3>Навыки</h3>
-        <ul>
-          <li>Целеустремлённость</li>
-          <li>Находчивость</li>
-          <li>Командная работа</li>
-          <li>Пунктуальность</li>
-          <li>Обучаемость</li>
-          <li>Интерес к саморазвитию</li>
-        </ul>
-        <h3>Языки</h3>
-        <ul>
-          <li>Украинский — родной</li>
-          <li>Русский — свободно</li>
-          <li>Английский — A1</li>
-          <li>Немецкий — A0.1 (в процессе)</li>
-        </ul>
-      </div>
-    </main>
-  </div>
-
-  <script>
-    function setLanguage(lang) {
-      document.querySelectorAll('.lang-section').forEach(section => {
-        section.style.display = 'none';
-      });
-      const active = document.getElementById(`lang-${lang}`);
-      if (active) active.style.display = 'block';
-    }
-    setLanguage('en');
-  </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
