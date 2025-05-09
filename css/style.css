@@ -4,21 +4,31 @@
     --dark: #1E2939;
     --light: #ffffff;
     --gray: #f5f5f5;
+    --text: #333333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--gray);
-    margin: 0;
-    color: #333;
+    color: var(--text);
     line-height: 1.6;
+    padding: 20px;
 }
 
 .main-section {
     display: flex;
     max-width: 1200px;
-    margin: 30px auto;
-    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    margin: 0 auto;
+    background: var(--light);
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 /* Боковая панель */
@@ -34,56 +44,240 @@ body {
     border-radius: 8px;
     margin-bottom: 30px;
     border: 3px solid var(--secondary);
+    display: block;
 }
 
-.sidebar h3 {
+.contact-info, .skills {
+    margin-bottom: 30px;
+}
+
+.contact-info h3, .skills h3 {
     color: var(--secondary);
     font-size: 18px;
-    margin: 25px 0 15px;
+    margin-bottom: 15px;
     position: relative;
+    padding-bottom: 5px;
 }
 
-.sidebar h3::after {
+.contact-info h3::after, .skills h3::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -8px;
+    bottom: 0;
     width: 40px;
     height: 2px;
     background: var(--secondary);
 }
 
-.sidebar ul {
-    padding-left: 20px;
+.contact-info p, .skills li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
-.sidebar li {
-    margin-bottom: 8px;
-    position: relative;
+.contact-info i, .skills i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+    color: var(--secondary);
 }
 
-.sidebar li::before {
+.skills ul {
+    list-style-type: none;
+}
+
+.skills li::before {
     content: '•';
     color: var(--secondary);
     margin-right: 8px;
 }
 
+.language-level {
+    margin-top: 10px;
+}
+
 .language-level span {
     display: block;
     margin-bottom: 5px;
+    font-size: 14px;
 }
 
 .language-level em {
     color: #aaa;
     font-style: normal;
     font-size: 0.9em;
+    margin-left: 5px;
 }
 
 /* Основное содержание */
 .main-content {
     flex: 1;
-    background: var(--light);
     padding: 40px;
 }
 
-/* Остальные стили... */
+.language-switcher {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.3s;
+    padding: 0;
+}
+
+.lang-btn:hover {
+    opacity: 0.8;
+}
+
+.lang-btn.active {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.lang-btn img {
+    width: 30px;
+    height: auto;
+    border-radius: 3px;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: var(--primary);
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.profession {
+    color: var(--secondary);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    color: var(--primary);
+    font-size: 22px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--secondary);
+}
+
+.section h2 i {
+    margin-right: 10px;
+}
+
+.lang-section {
+    display: none;
+}
+
+.lang-section.active {
+    display: block;
+}
+
+.education-item, .experience-item {
+    margin-bottom: 25px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.education-item::before, .experience-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--secondary);
+}
+
+.education-item h3, .experience-item h3 {
+    color: var(--primary);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.education-item p {
+    margin-bottom: 10px;
+}
+
+.documents {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.document-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    background-color: var(--gray);
+    border-radius: 4px;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.document-link:hover {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.document-link i {
+    margin-right: 6px;
+}
+
+.experience-item ul {
+    list-style-position: inside;
+    margin-top: 10px;
+}
+
+.experience-item li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.courses p {
+    font-size: 14px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .main-section {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .main-content {
+        padding: 20px;
+    }
+    
+    .language-switcher {
+        justify-content: center;
+    }
+    
+    .contact-info p, .skills li {
+        justify-content: center;
+    }
+}
