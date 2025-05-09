@@ -3,99 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional resume of Mykola Fisun - Electromechanic and Front-End Developer">
     <title>Mykola Fisun - Resume</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="main-section">
-        <!-- Основной контент (правая часть) -->
-        <div class="main-content-section">
-            <!-- Кнопки переключения языка -->
-            <div class="language-switcher">
-                <button class="lang-btn active" data-lang="de">
-                    <img src="img/de.png" alt="Deutsch" title="Deutsch">
-                </button>
-                <button class="lang-btn" data-lang="en">
-                    <img src="img/en.png" alt="English" title="English">
-                </button>
-                <button class="lang-btn" data-lang="ua">
-                    <img src="img/ua.png" alt="Українська" title="Українська">
-                </button>
-                <button class="lang-btn" data-lang="ru">
-                    <img src="img/ru.png" alt="Русский" title="Русский">
-                </button>
+        <!-- Боковая панель -->
+        <aside class="sidebar">
+            <img src="img/My foto.jpg" alt="Mykola Fisun" class="profile-photo">
+            
+            <div class="contact-info">
+                <h3>Contacts</h3>
+                <p><i class="fas fa-phone"></i> +380 95 426 27 89</p>
+                <p><i class="fas fa-envelope"></i> kolia.f2009@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Germany</p>
             </div>
-
-            <!-- Единственный раздел - "Обо мне" с мультиязычным контентом -->
-            <div class="about-me-container">
-                <!-- Немецкий (по умолчанию active) -->
-                <div class="lang-section active" data-lang="de">
-                    <h2>Über mich</h2>
-                    <p>Ich wurde am 2. März 1984 geboren. 2001 schloss ich die Schule ab (<a href="img/school-diploma.jpg" target="_blank">Diplom</a>).</p>
-                    <p>2001–2006: Studium an der Ostukrainischen Nationaluniversität, <a href="img/bachelor-diploma.jpg" target="_blank">Bachelor</a> und <a href="img/specialist-diploma.jpg" target="_blank">Spezialist</a> in Elektromechanik.</p>
-                    <p>2006–2009: Systemadministrator. Erfahrung mit Servern, OS-Installation, PC-Zusammenbau, Netzwerkverkabelung.</p>
-                    <p>2014–2024: Autoelektromechaniker. Arbeiten mit allen Marken, Gasanlagen, Elektronikreparatur, ECU-Löten, Videoüberwachung.</p>
-                    <p>2023–2024: Front-End Developer Kurs (JavaScript). Keine Berufserfahrung.</p>
-                </div>
-
-                <!-- Английский -->
-                <div class="lang-section" data-lang="en">
-                    <h2>About Me</h2>
-                    <p>I was born on March 2, 1984. In 2001, I graduated from secondary school (<a href="img/school-diploma.jpg" target="_blank">high school diploma</a>).</p>
-                    <p>From 2001 to 2006, I studied at the East Ukrainian National University and received a <a href="img/bachelor-diploma.jpg" target="_blank">Bachelor's</a> and <a href="img/specialist-diploma.jpg" target="_blank">Specialist</a> diploma in electromechanics.</p>
-                    <p>2006–2009: System administrator. Experience with servers, OS installation, PC assembly, network cabling.</p>
-                    <p>2014–2024: Auto electromechanic. Experience with all car brands, gas systems, electronics repair, ECU soldering, CCTV installation.</p>
-                    <p>2023–2024: Front-End Developer course (JavaScript). No work experience yet.</p>
-                </div>
-
-                <!-- Украинский -->
-                <div class="lang-section" data-lang="ua">
-                    <h2>Про мене</h2>
-                    <p>Народився 2 березня 1984 року. У 2001 закінчив середню школу (<a href="img/school-diploma.jpg" target="_blank">атестат</a>).</p>
-                    <p>2001–2006: навчався у Східноукраїнському національному університеті ім. В. Даля. Отримав <a href="img/bachelor-diploma.jpg" target="_blank">бакалавра</a> та <a href="img/specialist-diploma.jpg" target="_blank">спеціаліста</a> з електромеханіки.</p>
-                    <p>2006–2009: системний адміністратор. Сервери, встановлення ОС, складання ПК, мережеві з'єднання.</p>
-                    <p>2014–2024: автоелектромеханік. Робота з усіма марками авто, ГБО, ремонт електрики, пайка ЕБУ, встановлення відеоспостереження.</p>
-                    <p>2023–2024: курс Front-End Developer (JavaScript). Досвід роботи відсутній.</p>
-                </div>
-
-                <!-- Русский -->
-                <div class="lang-section" data-lang="ru">
-                    <h2>Обо мне</h2>
-                    <p>Родился 2 марта 1984 года. В 2001 году окончил среднюю школу (<a href="img/school-diploma.jpg" target="_blank">аттестат</a>).</p>
-                    <p>2001–2006: учился в Восточноукраинском национальном университете им. В. Даля. Получил диплом <a href="img/bachelor-diploma.jpg" target="_blank">бакалавра</a> и <a href="img/specialist-diploma.jpg" target="_blank">специалиста</a> по электромеханике.</p>
-                    <p>2006–2009: системный администратор. Серверы, установка ОС, сборка ПК, сетевая инфраструктура.</p>
-                    <p>2014–2024: автоэлектромеханик. Все марки авто, ГБО, ремонт проводки, пайка блоков, видеонаблюдение.</p>
-                    <p>2023–2024: курс Front-End Developer (JavaScript). Опыт работы отсутствует.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Боковая панель (левая часть - без изменений) -->
-        <aside class="Siide-bar-section">
-            <img class="img" src="img/My foto.jpg" alt="My foto">
-            <div class="Contact-section">
-                <h3 class="Contact-title">Contacts</h3>
-                <div>
-                    <span class="Contact-section-type">C:</span>
-                    <a class="Contact-section-link" href="tel:+380954262789">+380954262789</a>
-                </div>
-                <div>
-                    <span class="Contact-section-type">E:</span>
-                    <a class="Contact-section-link" href="mailto:kolia.f2009@gmail.com">kolia.f2009@gmail.com</a>
-                </div>
-            </div>
-            <div class="Tech-skills-section">
-                <h3 class="Tech-skills-title">Tech skills</h3>
-                <ul class="skills-lists">
-                    <li><span class="skills-name">HTML5</span></li>
-                    <li><span class="skills-name">CSS3</span></li>
-                    <li><span class="skills-name">JavaScript</span></li>
+            
+            <div class="skills">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>HTML5/CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Electronics Repair</li>
+                    <li>Auto Diagnostics</li>
                 </ul>
+                
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Goal-oriented</li>
+                    <li>Problem-solving</li>
+                    <li>Teamwork</li>
+                    <li>Fast learner</li>
+                </ul>
+                
+                <h3>Languages</h3>
+                <div class="language-level">
+                    <span>Ukrainian <em>(Native)</em></span>
+                    <span>Russian <em>(Fluent)</em></span>
+                    <span>English <em>(A1)</em></span>
+                    <span>German <em>(A0.1)</em></span>
+                </div>
             </div>
         </aside>
+
+        <!-- Основное содержание -->
+        <main class="main-content">
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="de"><img src="img/de.png" alt="DE"></button>
+                <button class="lang-btn" data-lang="en"><img src="img/en.png" alt="EN"></button>
+                <button class="lang-btn" data-lang="ua"><img src="img/ua.png" alt="UA"></button>
+                <button class="lang-btn" data-lang="ru"><img src="img/ru.png" alt="RU"></button>
+            </div>
+
+            <header>
+                <h1>Mykola Fisun</h1>
+                <p class="profession">Electromechanic / Front-End Developer</p>
+            </header>
+
+            <!-- Немецкая версия -->
+            <section class="lang-section active" data-lang="de">
+                <div class="section about-me">
+                    <h2><i class="fas fa-user"></i> Über Mich</h2>
+                    <p>Geboren am 02.03.1984. Fachkraft mit umfassender Erfahrung in Elektromechanik und IT.</p>
+                </div>
+
+                <div class="section education">
+                    <h2><i class="fas fa-graduation-cap"></i> Ausbildung</h2>
+                    <div class="timeline-item">
+                        <h3>Vollständige Sekundarschulbildung</h3>
+                        <p class="date">2001 | Lutuhyne Schule Nr. 2</p>
+                        <a href="img/SchoolDiplom_Front.jpg" class="document-link" target="_blank"><i class="fas fa-file-alt"></i> Zeugnis</a>
+                    </div>
+                    <!-- Остальные элементы образования -->
+                </div>
+                <!-- Остальные разделы -->
+            </section>
+
+            <!-- Английская и другие версии -->
+            <section class="lang-section" data-lang="en">
+                <!-- Аналогичная структура на английском -->
+            </section>
+            <!-- Украинская и русская версии -->
+        </main>
     </div>
 
     <script src="js/script.js"></script>

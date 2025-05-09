@@ -1,29 +1,38 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Устанавливаем немецкий как язык по умолчанию
-    setActiveLanguage('de');
-
-    // Обработчики для кнопок переключения языка
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
-            const lang = this.getAttribute('data-lang');
-            setActiveLanguage(lang);
-        });
-    });
+    // Инициализация
+    initLanguageSwitcher();
+    setupDocumentViewer();
 });
 
-function setActiveLanguage(lang) {
-    // 1. Обновляем активную кнопку
+function initLanguageSwitcher() {
+    const defaultLang = 'de';
+    setActiveLanguage(defaultLang);
+    
     document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.remove('active');
+        btn.addEventListener('click', function() {
+            const lang = this.dataset.lang;
+            setActiveLanguage(lang);
+            localStorage.setItem('preferredLang', lang);
+        });
     });
-    document.querySelector(`.lang-btn[data-lang="${lang}"]`).classList.add('active');
+}
 
-    // 2. Показываем нужную языковую секцию
+function setActiveLanguage(lang) {
+    // Обновляем активную кнопку
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+    
+    // Показываем нужную языковую секцию
     document.querySelectorAll('.lang-section').forEach(section => {
-        section.classList.remove('active');
+        section.classList.toggle('active', section.dataset.lang === lang);
     });
-    document.querySelector(`.lang-section[data-lang="${lang}"]`).classList.add('active');
-
-    // 3. Обновляем атрибут lang у html
+    
+    // Обновляем атрибут lang у html
     document.documentElement.lang = lang;
+}
+
+function setupDocumentViewer() {
+    // Можно добавить модальное окно для просмотра документов
+    // Например, с использованием lightbox библиотеки
 }
