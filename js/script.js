@@ -1,8 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Устанавливаем язык по умолчанию (немецкий)
     const defaultLang = 'de';
-    setActiveLanguage(defaultLang);
     
+    // Проверяем сохраненный язык
+    const savedLang = localStorage.getItem('preferredLang');
+    const initialLang = savedLang || defaultLang;
+    
+    setActiveLanguage(initialLang);
+
     // Обработчики для кнопок переключения языка
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.addEventListener('click', function() {
@@ -12,12 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('preferredLang', lang);
         });
     });
-    
-    // Проверяем сохраненный язык
-    const savedLang = localStorage.getItem('preferredLang');
-    if (savedLang) {
-        setActiveLanguage(savedLang);
-    }
 });
 
 function setActiveLanguage(lang) {
@@ -31,28 +30,15 @@ function setActiveLanguage(lang) {
     
     // 2. Скрываем все языковые секции
     document.querySelectorAll('.lang-section').forEach(section => {
-        section.style.display = 'none';
+        section.classList.remove('active');
     });
     
     // 3. Показываем только выбранную языковую секцию
     const activeSection = document.querySelector(`.lang-section[data-lang="${lang}"]`);
     if (activeSection) {
-        activeSection.style.display = 'block';
+        activeSection.classList.add('active');
     }
     
     // 4. Обновляем атрибут lang у html
     document.documentElement.lang = lang;
-    
-    // 5. Обновляем мультиязычные элементы в боковой панели
-    updateMultilingualElements(lang);
-}
-
-function updateMultilingualElements(lang) {
-    // Обновляем заголовки в боковой панели
-    document.querySelectorAll('[data-lang-title]').forEach(el => {
-        el.textContent = el.getAttribute(`data-lang-${lang}`);
-    });
-    
-    // Обновляем другие мультиязычные элементы при необходимости
-    // ...
 }

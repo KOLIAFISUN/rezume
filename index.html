@@ -16,31 +16,35 @@
         <aside class="sidebar">
             <img src="img/My foto.jpg" alt="Mykola Fisun" class="profile-photo">
             
-            <div class="contact-info">
-                <h3 class="section-title">Contacts</h3>
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Contacts</h3>
                 <p><i class="fas fa-phone"></i> +380 95 426 27 89</p>
                 <p><i class="fas fa-envelope"></i> kolia.f2009@gmail.com</p>
                 <p><i class="fas fa-map-marker-alt"></i> Germany</p>
             </div>
             
-            <div class="skills">
-                <h3>Technical Skills</h3>
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Technical Skills</h3>
                 <ul>
                     <li>HTML5/CSS3</li>
                     <li>JavaScript</li>
                     <li>Electronics Repair</li>
                     <li>Auto Diagnostics</li>
                 </ul>
-                
-                <h3>Soft Skills</h3>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Soft Skills</h3>
                 <ul>
                     <li>Goal-oriented</li>
                     <li>Problem-solving</li>
                     <li>Teamwork</li>
                     <li>Fast learner</li>
                 </ul>
-                
-                <h3>Languages</h3>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Languages</h3>
                 <div class="language-level">
                     <span>Ukrainian <em>(Native)</em></span>
                     <span>Russian <em>(Fluent)</em></span>
@@ -65,17 +69,17 @@
             </header>
 
             <!-- Немецкая версия -->
-            <section class="lang-section active" data-lang="de">
+            <div class="lang-section active" data-lang="de">
                 <div class="section about-me">
                     <h2><i class="fas fa-user"></i> Über Mich</h2>
-                    <p>Geboren am 02.03.1984. Fachkraft mit umfassender Erfahrung in Elektromechanik und IT.</p>
+                    <p>Geboren am 2. März 1984. Ledig, keine Kinder. Heterosexuell. Keine chronischen Krankheiten. Fachkraft mit langjähriger Erfahrung in Elektromechanik, Autodiagnostik und -reparatur sowie Computertechnik. In meiner Freizeit beschäftige ich mich mit IT und künstlicher Intelligenz.</p>
                 </div>
 
                 <div class="section education">
                     <h2><i class="fas fa-graduation-cap"></i> Ausbildung</h2>
                     
                     <div class="education-item">
-                        <h3>2001 — Schule Nr. 2, Lutuhyne</h3>
+                        <h3>1991–2001 — Mittelschule Nr. 2, Lutuhyne</h3>
                         <p>Abschlusszeugnis der allgemeinen Sekundarschulbildung</p>
                         <div class="documents">
                             <a href="img/SchoolDiplom_Front.jpg" target="_blank" class="document-link">
@@ -91,40 +95,28 @@
                         <h3>2001–2006 — Ostukrainische Nationale Universität W. Dal</h3>
                         <div class="diploma">
                             <p><i class="fas fa-certificate"></i> Bachelor in Elektromechanik</p>
-                            <div class="documents">
-                                <a href="img/Bachelor_Front.jpg" target="_blank" class="document-link">
-                                    <i class="fas fa-file-alt"></i> Vorderseite
-                                </a>
-                                <a href="img/Bachelor_Back.jpg" target="_blank" class="document-link">
-                                    <i class="fas fa-file-alt"></i> Rückseite
-                                </a>
-                            </div>
-                            
                             <p><i class="fas fa-certificate"></i> Spezialist für Haushaltsgeräte</p>
-                            <div class="documents">
-                                <a href="img/Specialist_Front.jpg" target="_blank" class="document-link">
-                                    <i class="fas fa-file-alt"></i> Vorderseite
-                                </a>
-                                <a href="img/Specialist_Back.jpg" target="_blank" class="document-link">
-                                    <i class="fas fa-file-alt"></i> Rückseite
-                                </a>
-                            </div>
                         </div>
+                        <div class="documents">
+                            <a href="img/UniversityDiploma_Front.jpg" target="_blank" class="document-link">
+                                <i class="fas fa-file-alt"></i> Diplom
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <h3>2011–2013 — Spezialkurs für Autodiagnostik</h3>
+                        <p>Diagnose und Reparatur von Einspritzsystemen</p>
+                    </div>
+                    
+                    <div class="education-item">
+                        <h3>2023–2024 — Front-End Developer Kurs</h3>
+                        <p>GoIT Fullstack Developer (JavaScript)</p>
                     </div>
                 </div>
                 
                 <div class="section experience">
                     <h2><i class="fas fa-briefcase"></i> Berufserfahrung</h2>
-                    
-                    <div class="experience-item">
-                        <h3>2014–2024 — Autoelektromechaniker</h3>
-                        <ul>
-                            <li>Arbeit mit allen Automarken</li>
-                            <li>Installation und Wartung von Gasanlagen</li>
-                            <li>Reparatur von Elektronik und Steuergeräten</li>
-                            <li>Installation von Überwachungssystemen</li>
-                        </ul>
-                    </div>
                     
                     <div class="experience-item">
                         <h3>2006–2009 — Systemadministrator</h3>
@@ -135,26 +127,39 @@
                             <li>Netzwerkverkabelung</li>
                         </ul>
                     </div>
+                    
+                    <div class="experience-item">
+                        <h3>2009–2011 — Top-Manager für Autoteileverkauf</h3>
+                        <ul>
+                            <li>Personal- und Kundenmanagement</li>
+                            <li>Buchhaltung und Berichterstattung</li>
+                            <li>Computeroptimierung der Warenbestandsverwaltung</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <h3>2014–2024 — Autoelektromechaniker</h3>
+                        <ul>
+                            <li>Diagnose und Reparatur von Fahrzeugen</li>
+                            <li>Arbeit mit allen Automarken</li>
+                            <li>Reparatur von Elektronik und Steuergeräten</li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="section courses">
-                    <h2><i class="fas fa-certificate"></i> Weiterbildung</h2>
-                    <p>2023–2024 — Front-End Developer Kurs (JavaScript)</p>
-                </div>
-            </section>
+            </div>
 
             <!-- Английская версия -->
-            <section class="lang-section" data-lang="en">
+            <div class="lang-section" data-lang="en">
                 <div class="section about-me">
                     <h2><i class="fas fa-user"></i> About Me</h2>
-                    <p>Born on March 2, 1984. Professional with extensive experience in electromechanics and IT.</p>
+                    <p>Born on March 2, 1984. Single, no children. Heterosexual. No chronic diseases. Professional with extensive experience in electromechanics, car diagnostics and repair, and computer technology. In my free time, I develop in IT and artificial intelligence.</p>
                 </div>
 
                 <div class="section education">
                     <h2><i class="fas fa-graduation-cap"></i> Education</h2>
                     
                     <div class="education-item">
-                        <h3>2001 — School No. 2, Lutuhyne</h3>
+                        <h3>1991–2001 — Lutuhyne Secondary School No. 2</h3>
                         <p>Certificate of Complete General Secondary Education</p>
                         <div class="documents">
                             <a href="img/SchoolDiplom_Front.jpg" target="_blank" class="document-link">
@@ -170,40 +175,28 @@
                         <h3>2001–2006 — Volodymyr Dahl East Ukrainian National University</h3>
                         <div class="diploma">
                             <p><i class="fas fa-certificate"></i> Bachelor's degree in Electromechanics</p>
-                            <div class="documents">
-                                <a href="img/Bachelor_Front.jpg" target="_blank" class="document-link">
-                                    <i class="fas fa-file-alt"></i> Front side
-                                </a>
-                                <a href="img/Bachelor_Back.jpg" target="_blank" class="document-link">
-                                    <i class="fas fa-file-alt"></i> Back side
-                                </a>
-                            </div>
-                            
                             <p><i class="fas fa-certificate"></i> Specialist in Household Appliances</p>
-                            <div class="documents">
-                                <a href="img/Specialist_Front.jpg" target="_blank" class="document-link">
-                                    <i class="fas fa-file-alt"></i> Front side
-                                </a>
-                                <a href="img/Specialist_Back.jpg" target="_blank" class="document-link">
-                                    <i class="fas fa-file-alt"></i> Back side
-                                </a>
-                            </div>
                         </div>
+                        <div class="documents">
+                            <a href="img/UniversityDiploma_Front.jpg" target="_blank" class="document-link">
+                                <i class="fas fa-file-alt"></i> Diploma
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <h3>2011–2013 — Special Course in Auto Diagnostics</h3>
+                        <p>Diagnosis and repair of injection systems</p>
+                    </div>
+                    
+                    <div class="education-item">
+                        <h3>2023–2024 — Front-End Developer Course</h3>
+                        <p>GoIT Fullstack Developer (JavaScript)</p>
                     </div>
                 </div>
                 
                 <div class="section experience">
                     <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
-                    
-                    <div class="experience-item">
-                        <h3>2014–2024 — Auto Electromechanic</h3>
-                        <ul>
-                            <li>Work with all car brands</li>
-                            <li>Installation and maintenance of gas systems</li>
-                            <li>Repair of electronics and control units</li>
-                            <li>Installation of surveillance systems</li>
-                        </ul>
-                    </div>
                     
                     <div class="experience-item">
                         <h3>2006–2009 — System Administrator</h3>
@@ -214,26 +207,39 @@
                             <li>Network cabling</li>
                         </ul>
                     </div>
+                    
+                    <div class="experience-item">
+                        <h3>2009–2011 — Top Manager for Auto Parts Sales</h3>
+                        <ul>
+                            <li>Personnel and customer management</li>
+                            <li>Accounting and reporting</li>
+                            <li>Computer optimization of inventory management</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <h3>2014–2024 — Auto Electromechanic</h3>
+                        <ul>
+                            <li>Vehicle diagnostics and repair</li>
+                            <li>Work with all car brands</li>
+                            <li>Repair of electronics and control units</li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="section courses">
-                    <h2><i class="fas fa-certificate"></i> Courses</h2>
-                    <p>2023–2024 — Front-End Developer course (JavaScript)</p>
-                </div>
-            </section>
+            </div>
 
             <!-- Украинская версия -->
-            <section class="lang-section" data-lang="ua">
+            <div class="lang-section" data-lang="ua">
                 <div class="section about-me">
                     <h2><i class="fas fa-user"></i> Про мене</h2>
-                    <p>Народився 2 березня 1984 року. Фахівець з багаторічним досвідом у електромеханіці та IT.</p>
+                    <p>Народився 2 березня 1984 року. Не одружений, дітей немає. Гетеросексуал. Без хронічних захворювань. Фахівець з багаторічним досвідом у електромеханіці, діагностиці та ремонті автомобілів, комп'ютерній техніці. У вільний час розвиваюсь у сфері IT та штучного інтелекту.</p>
                 </div>
 
                 <div class="section education">
                     <h2><i class="fas fa-graduation-cap"></i> Освіта</h2>
                     
                     <div class="education-item">
-                        <h3>2001 — Лутугинська школа №2</h3>
+                        <h3>1991–2001 — Лутугинська середня школа №2</h3>
                         <p>Атестат про повну загальну середню освіту</p>
                         <div class="documents">
                             <a href="img/SchoolDiplom_Front.jpg" target="_blank" class="document-link">
@@ -249,40 +255,28 @@
                         <h3>2001–2006 — Східноукраїнський національний університет ім. В. Даля</h3>
                         <div class="diploma">
                             <p><i class="fas fa-certificate"></i> Бакалавр з електромеханіки</p>
-                            <div class="documents">
-                                <a href="img/Bachelor_Front.jpg" target="_blank" class="document-link">
-                                    <i class="fas fa-file-alt"></i> Лицьова сторона
-                                </a>
-                                <a href="img/Bachelor_Back.jpg" target="_blank" class="document-link">
-                                    <i class="fas fa-file-alt"></i> Зворотня сторона
-                                </a>
-                            </div>
-                            
                             <p><i class="fas fa-certificate"></i> Спеціаліст з електропобутової техніки</p>
-                            <div class="documents">
-                                <a href="img/Specialist_Front.jpg" target="_blank" class="document-link">
-                                    <i class="fas fa-file-alt"></i> Лицьова сторона
-                                </a>
-                                <a href="img/Specialist_Back.jpg" target="_blank" class="document-link">
-                                    <i class="fas fa-file-alt"></i> Зворотня сторона
-                                </a>
-                            </div>
                         </div>
+                        <div class="documents">
+                            <a href="img/UniversityDiploma_Front.jpg" target="_blank" class="document-link">
+                                <i class="fas fa-file-alt"></i> Диплом
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <h3>2011–2013 — Спецкурс з автомобільної діагностики</h3>
+                        <p>Діагностика та ремонт інжекторних систем</p>
+                    </div>
+                    
+                    <div class="education-item">
+                        <h3>2023–2024 — Курс Front-End Developer</h3>
+                        <p>GoIT Fullstack Developer (JavaScript)</p>
                     </div>
                 </div>
                 
                 <div class="section experience">
                     <h2><i class="fas fa-briefcase"></i> Досвід роботи</h2>
-                    
-                    <div class="experience-item">
-                        <h3>2014–2024 — Автоелектромеханік</h3>
-                        <ul>
-                            <li>Робота з усіма марками авто</li>
-                            <li>Встановлення та обслуговування ГБО</li>
-                            <li>Ремонт електроніки та блоків управління</li>
-                            <li>Встановлення систем відеоспостереження</li>
-                        </ul>
-                    </div>
                     
                     <div class="experience-item">
                         <h3>2006–2009 — Системний адміністратор</h3>
@@ -293,26 +287,39 @@
                             <li>Мережеве кабелювання</li>
                         </ul>
                     </div>
+                    
+                    <div class="experience-item">
+                        <h3>2009–2011 — Топ-менеджер з продажу автозапчастин</h3>
+                        <ul>
+                            <li>Робота з персоналом та клієнтами</li>
+                            <li>Ведення бухгалтерії та звітності</li>
+                            <li>Комп'ютерна оптимізація обліку товару</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <h3>2014–2024 — Автоелектромеханік</h3>
+                        <ul>
+                            <li>Діагностика та ремонт автомобілів</li>
+                            <li>Робота з усіма марками авто</li>
+                            <li>Ремонт електроніки та блоків управління</li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="section courses">
-                    <h2><i class="fas fa-certificate"></i> Курси</h2>
-                    <p>2023–2024 — Курс Front-End Developer (JavaScript)</p>
-                </div>
-            </section>
+            </div>
 
             <!-- Русская версия -->
-            <section class="lang-section" data-lang="ru">
+            <div class="lang-section" data-lang="ru">
                 <div class="section about-me">
                     <h2><i class="fas fa-user"></i> Обо мне</h2>
-                    <p>Родился 2 марта 1984 года. Специалист с многолетним опытом в электромеханике и IT.</p>
+                    <p>Родился 2 марта 1984 года. Не женат, детей нет. Гетеросексуал. Без хронических заболеваний. Специалист с многолетним опытом в электромеханике, диагностике и ремонте автомобилей, компьютерной технике. В свободное время развиваюсь в сфере IT и искусственного интеллекта.</p>
                 </div>
 
                 <div class="section education">
                     <h2><i class="fas fa-graduation-cap"></i> Образование</h2>
                     
                     <div class="education-item">
-                        <h3>2001 — Лутугинская школа №2</h3>
+                        <h3>1991–2001 — Лутугинская средняя школа №2</h3>
                         <p>Аттестат о полном общем среднем образовании</p>
                         <div class="documents">
                             <a href="img/SchoolDiplom_Front.jpg" target="_blank" class="document-link">
@@ -328,40 +335,28 @@
                         <h3>2001–2006 — Восточноукраинский национальный университет им. В. Даля</h3>
                         <div class="diploma">
                             <p><i class="fas fa-certificate"></i> Бакалавр по специальности «Электромеханика»</p>
-                            <div class="documents">
-                                <a href="img/Bachelor_Front.jpg" target="_blank" class="document-link">
-                                    <i class="fas fa-file-alt"></i> Лицевая сторона
-                                </a>
-                                <a href="img/Bachelor_Back.jpg" target="_blank" class="document-link">
-                                    <i class="fas fa-file-alt"></i> Оборотная сторона
-                                </a>
-                            </div>
-                            
                             <p><i class="fas fa-certificate"></i> Специалист по электро-бытовой технике</p>
-                            <div class="documents">
-                                <a href="img/Specialist_Front.jpg" target="_blank" class="document-link">
-                                    <i class="fas fa-file-alt"></i> Лицевая сторона
-                                </a>
-                                <a href="img/Specialist_Back.jpg" target="_blank" class="document-link">
-                                    <i class="fas fa-file-alt"></i> Оборотная сторона
-                                </a>
-                            </div>
                         </div>
+                        <div class="documents">
+                            <a href="img/UniversityDiploma_Front.jpg" target="_blank" class="document-link">
+                                <i class="fas fa-file-alt"></i> Диплом
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <h3>2011–2013 — Спецкурс по автомобильной диагностике</h3>
+                        <p>Диагностика и ремонт инжекторных систем</p>
+                    </div>
+                    
+                    <div class="education-item">
+                        <h3>2023–2024 — Курс Front-End Developer</h3>
+                        <p>GoIT Fullstack Developer (JavaScript)</p>
                     </div>
                 </div>
                 
                 <div class="section experience">
                     <h2><i class="fas fa-briefcase"></i> Опыт работы</h2>
-                    
-                    <div class="experience-item">
-                        <h3>2014–2024 — Автоэлектромеханик</h3>
-                        <ul>
-                            <li>Работа со всеми марками автомобилей</li>
-                            <li>Установка и обслуживание ГБО</li>
-                            <li>Ремонт электроники и блоков управления</li>
-                            <li>Установка систем видеонаблюдения</li>
-                        </ul>
-                    </div>
                     
                     <div class="experience-item">
                         <h3>2006–2009 — Системный администратор</h3>
@@ -372,13 +367,26 @@
                             <li>Сетевая кабельная инфраструктура</li>
                         </ul>
                     </div>
+                    
+                    <div class="experience-item">
+                        <h3>2009–2011 — Топ-менеджер по продаже автозапчастей</h3>
+                        <ul>
+                            <li>Работа с персоналом и клиентами</li>
+                            <li>Ведение бухгалтерии и отчетности</li>
+                            <li>Компьютерная оптимизация учета товара</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <h3>2014–2024 — Автоэлектромеханик</h3>
+                        <ul>
+                            <li>Диагностика и ремонт автомобилей</li>
+                            <li>Работа со всеми марками авто</li>
+                            <li>Ремонт электроники и блоков управления</li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="section courses">
-                    <h2><i class="fas fa-certificate"></i> Курсы</h2>
-                    <p>2023–2024 — Курс Front-End Developer (JavaScript)</p>
-                </div>
-            </section>
+            </div>
         </main>
     </div>
 
